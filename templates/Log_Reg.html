@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/templates/Log_reg.css" />
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="maindiv">
+      <h1>Welcome</h1>
+      <form action="" id="LogForm" class="myLogForm">
+        <input
+          type="email"
+          name="email"
+          class="InputText"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          name="password"
+          class="InputText"
+          placeholder="Password"
+        />
+        <!--change required in js -->
+        <div>
+          <button class="mybutton">Register</button>
+          <button class="mybutton">Log in</button>
+        </div>
+      </form>
+
+      <form action="" id="RegForm" class="myRegForm">
+        <input type="text" name="Login" class="InputText" placeholder="Login" />
+        <input
+          type="email"
+          name="email"
+          class="InputText"
+          placeholder="Email"
+        />
+        <input
+          type="password"
+          name="password1"
+          class="InputText"
+          placeholder="Password 1"
+        />
+        <input
+          type="password"
+          name="password2"
+          class="InputText"
+          placeholder="Password 2"
+        />
+        <div>
+          <button class="mybutton" id="Regbtn">Register</button>
+          <button type="submit" class="mybutton" id="Logbtn">Log in</button>
+        </div>
+      </form>
+      <script src="/templates/scripts/LoginScript.js"></script>
+    </div>
+  </body>
+</html>

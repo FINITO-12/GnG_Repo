@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(78, 84, 255);
+  /* background: url(); */
+}
+
+.maindiv {
+  padding-top: 13em;
+  text-align: center;
+  justify-content: center;
+  border: 1px white solid;
+}
+
+.InputText {
+  border-radius: 20px;
+  background-color: white;
+  width: 20em;
+  margin: 0.5em auto;
+  height: 2em;
+  font-size: large;
+  padding-left: 1em;
+}
+.mybutton:hover {
+  background-color: gray;
+}
+
+.InputText::placeholder {
+  color: gray;
+}
+.mybutton {
+  background-color: white;
+  border-radius: 20px;
+  font-size: large;
+  border: none;
+  width: 8em;
+  transition: background-color 0.3s ease;
+}
+.myLogForm {
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+}
+.myRegForm {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  display: flex;
+  margin-left: 1em;
+}
