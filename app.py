@@ -1,15 +1,13 @@
 from flask import Flask, render_template
 
-from GlemBase import Database
-
 app = Flask(__name__)
 
-#basis = Database("x", "x", "x", "x")
-#conn = basis.connect()
-#cursor = basis.createCursor(conn=conn)
-#basis.insert("soska", "sosochka")
-#basis.closeCursor(conn)
-#basis.disconnect(conn)
+# basis = Database("x", "x", "x", "x")
+# conn = basis.connect()
+# cursor = basis.createCursor(conn=conn)
+# basis.insert("soska", "sosochka")
+# basis.closeCursor(conn)
+# basis.disconnect(conn)
 
 posts = [
     {
@@ -28,7 +26,6 @@ posts = [
 ]
 
 
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -38,3 +35,27 @@ def home():
 @app.route("/about")
 def about():
     return render_template('about.html', title='About')
+
+@app.route("/userprofile")
+def userProfile():
+    pass
+
+@app.route("/steam")
+def steamTransaction():
+    pass
+
+@app.route("/steamtl")
+def steamTransactionTL():
+    pass
+
+@app.route("/minecraft")
+def minecraft():
+    pass
+
+@app.route("/playstation")
+def psTransaction():
+    pass
+
+@app.route("/playstationplus")
+def psplusTransaction():
+    pass
