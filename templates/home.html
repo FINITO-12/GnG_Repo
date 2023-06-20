@@ -1,8 +1,50 @@
-{% extends "layout.html" %}
-{% block content %}
-    {% for post in posts %}
-    <h1>{{ post.title }}</h1>
-    <p>By {{post.author}} on {{post.date_posted}}</p>
-    <p>{{post.content}}</p>
-    {% endfor %}
-{% endblock content %}
+<!-- {% extends "layout.html" %} {% block content %} {% for post in posts %}
+<h1>{{ post.title }}</h1>
+<p>By {{post.author}} on {{post.date_posted}}</p>
+<p>{{post.content}}</p>
+{% endfor %} {% endblock content %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/templates/home.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/9331388b75.js"
+      crossorigin="anonymous"
+    ></script>
+    <header class="HomeHeader">
+      <a class="DropDownMenu" href="#">
+        <div style="width: 100px; margin-bottom: 0">
+          <i
+            class="fa-solid fa-bars fa-2xl BurgerIcon"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <div class="DropDownMenuContent">
+          <div>
+            <input type="text" placeholder="babaduba" />
+            <button>Button</button>
+          </div>
+        </div>
+      </a>
+      <h1>GAMSLEA.STORE</h1>
+      <a href="#"
+        >USER ID
+        <!-- <img src="#" alt="#" /> -->
+        <!-- future avatar -->
+      </a>
+    </header>
+    <main class="MainDiv">
+      <button class="MainButton">Button</button>
+      <div class="ControlPanelDiv">Control ControlPanel</div>
+    </main>
+
+    <footer class="HomeFooter"><h1>razler dvazler</h1></footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+html,
+body {
+  height: 100%;
+}
+.HomeHeader {
+  background-color: #1d0169;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.BurgerIcon {
+  border: 0;
+  background-color: initial;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* returns back while hovered on .DropDownMenuContent */
+
+/* .BurgerIcon:hover {
+  transform: rotate(90deg);
+} */
+
+.HomeHeader,
+h1 {
+  color: white;
+}
+
+.DropDownMenu {
+  position: relative;
+  background-color: initial;
+  border: 0;
+  margin: 1.9em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin: 1.9em;
+}
+
+.DropDownMenuContent {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  margin-top: 0.4em;
+  border: 2px black solid;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.DropDownMenu:hover .DropDownMenuContent {
+  display: block;
+  background-color: gray;
+  border: 0px 0px 2px 2px black solid;
+}
+.DropDownMenuContent:hover {
+  display: block;
+}
+
+.MainDiv {
+  display: flex;
+  background-color: #0a0027;
+  padding: 6em;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.MainButton {
+  border-radius: 70px;
+  height: 4em;
+  transition: transform 0.1s ease-in-out;
+}
+
+.MainButton:hover {
+  transform: scale(1.3);
+}
+
+.ControlPanelDiv {
+  height: 23em;
+  width: 43em;
+  background-color: white;
+}
+
+.HomeFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
